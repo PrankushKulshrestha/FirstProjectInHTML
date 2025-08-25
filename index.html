@@ -1,0 +1,211 @@
+<!-- This tells the browser that we are using html5 -->
+<!DOCTYPE html> 
+<!-- This is the root of an html document <html> -->
+<html lang="en">
+<!-- lang thing is an attribute for the html tag and specifically tells that language is english -->
+<!-- Container for metadata (Useful information about data (data about data)) -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First page</title>
+</head>
+<!-- The main content that would be viewed on the website -->
+<body>
+<!--<hr>: this is used to make a horizontal line between tags-->
+    <hr/>
+<!-- Adding links to the pages using anchor tag -->
+<!--The title attribute is a very important tag associated with the anchor tag is opens the link in the next tab instead of the original tab-->
+        <a href="Homepage.html" target="_main">Go to Homepage</a>
+<!-- break line -->
+        <br/>
+        <a href="https:/www.google.com/" target="_main" ><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png" alt="This is supposed to be the logo of google which will redirect you to the google homepage" height="50" > </a>
+    <hr/>
+<!-- The semantic tags are tags refer describe the meaning of content the one below is the ehader semantic tag-->
+    <header>
+        <h1>My First Website using HTML</h1>
+    </header>
+    <main>
+<!--This is a section tag-->
+        <section><p></p><b>Education:</b> 
+            <br/>
+            College: NSUT
+            <br/>
+            Schooling: Presidium GGN | Presidium Indrapuram | DPSVK</p></section>
+        <section><p><b>About: </b>
+            <br/>
+            Name: Prankush Kulshrestha 
+            <br/>
+            Branch: Computer Science Engineering
+            <br/>
+            Specialization: Aritificial Intelligence</p> </section>
+        <section><p><b>Social: </b>
+            <br/>
+            LinkedIn: <a href="https://www.linkedin.com/in/prankush-kulshrestha/">LinkedIn profile Link</a>
+            <br/>
+            GitHub: <a href="https://github.com/PrankushKulshrestha">GitHub profile Link</a> 
+            <br/>
+            Instagram: <a href="https://www.instagram.com/prankush_kulshrestha/">Instagram profile Link</a> </p> </section>
+<!--This is an article tag-->
+        <article><hr/>
+        <h1>Hello, World! in h1</h1>
+        <h2>Hello, World! in h2</h2> 
+        <h3>Hello, World! in h3</h3>
+        <h4>Hello, World! in h4</h4>
+        <h5>Hello, World! in h5</h5>
+        <h6>Hello, World! in h6</h6>
+        <h7>Hello, World! in h7</h7></article>
+        <hr/>
+<!-- Anything above this will be same as h7 -->
+<!--This is the aside tag-->
+        <aside>This is inside of the aside tag which is used for advertisements</aside>
+        <hr/>
+        <p>This is inside a paragraph</p>
+<!-- this is the div tag which is a non semantic tag and it covers full page horizontally which makes it a block element and not an inline elements  -->
+        <div>
+        <p>This paragraph is inside of the div block element</p>
+        </div>
+<!--span just uses the space required to fill in the elements typed inside of it making it an inline element-->
+        <span>This is inside of the span inline element</span>
+        <hr/>
+<!-- Image tag -->
+ <!-- alt and height attributes are important -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/640px-Google_2015_logo.svg.png" alt="This was supposed to be an image for the logo of Google" height="100"/>
+        <br/>
+        <hr/>
+<!--Video tag-->
+        <video src="myvideo2.mp4" height="300" controls loop>Your browser does not support the video tag.</video>
+        <br/>
+        <br/>
+        <hr/>
+        <b>Bold</b>
+        <br/>
+        <i>Italics</i>
+        <br/>
+        <u>Underlined</u>
+        <br/>
+        <big>this tag shows BIG text</big>
+        <br/>
+        <small>this tag shows small text</small>
+        <p>H<sub>2</sub>O is water
+        <br/>
+        2<sup>3</sup> = 8
+        </p>
+<!-- pre tag is used to display as it is (counting the spaces and next line) -->
+        <pre>This is a
+sample text split in 
+different lines
+using the pre tag.
+        </pre>
+        <hr/>
+<!-- iframe tag creation -->
+        <iframe width="800" height="450" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=YzvgMkC7_RF8eeY_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+        <hr/>
+<!-- Unordered list creation (it is possible to create sub lists the bullets would have different style) -->
+        <ul>
+            <li>Apple</li>
+            <li>Mango</li>
+            <li>Litchi</li>
+        </ul>
+<!-- Ordered list creation-->
+        <ol>
+            <li>Apple</li>
+            <li>Mango</li>
+            <li>Litchi</li>
+        </ol>
+        <hr/>
+<!--Table creation-->
+<!--We can also use an attribtue named colspan which makes the allignment of the text better by including more than one coloumn to allign with eg: <th colspan="2"> information </th>
+-->
+        <table>
+            <thead>
+            <caption>Student data</caption>
+            <tr>
+                <th>Name</th>
+                <th>Roll No</th>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Prankush Kulshrestha (1)</td>
+                <td>1948</td>
+            </tr>
+            <tr>
+                <td>Prankush Kulshrestha (2)</td>
+                <td>1948</td>
+            </tr>
+            <tr>
+                <td>Prankush Kulshrestha (3)</td>
+                <td>1948</td>
+            </tr>
+            <tr>
+                <td>Prankush Kulshrestha (4)</td>
+                <td>1948</td>
+            </tr>
+            <tr>
+                <td>Prankush Kulshrestha (5)</td>
+                <td>1948</td>
+            </tr>
+        </tbody>
+        </table>
+        <hr/>
+<!-- Form creation-->
+        <form action="/action.php">
+            <input type="text" placeholder="Enter name">
+            <br/>
+            <input type="number" placeholder="Enter contact no">
+            <br/>
+            <input type="password" placeholder="Enter password">
+            <br/>  
+            <br/>
+            <label for="1">          
+                <input type="radio" value="Class 11th" name="Class" id="1">Class XI
+            </label>
+            <br/>
+            <label for="2">
+                <input type="radio" value="Class 12th" name="Class" id="2">Class XII
+            </label>
+            <br/>
+            <br/>
+            <label for="101">
+                <input type="checkbox" value="Mathematics" name="Subject" id="101">Mathematics
+            </label>
+            <label for="102">
+                <input type="checkbox" value="Quantum Physics" name="Subject" id="102">Quantum Physics
+            </label>
+            <label for="103">
+                <input type="checkbox" value="Electronics and Communication Engineering" name="Subject" id="103">Electronics and Communicaton Engineering
+            </label>
+            <label for="104">
+                <input type="checkbox" value="Electrical Engineering" name="Subject" id="104">Electrical Engineering
+            </label>
+            <label for="105">
+                <input type="checkbox" value="Computer Programming" name="Subject" id="105">Computer Programming
+            </label>
+            <br/>
+            <br/>
+            <select name="City">
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Bangalore">Bangalore</option>
+            </select>
+            <br/>
+            <br/>
+            <textarea name="feedback" id="1000" placeholder="Please give your valuable feedback..." rows="5">
+            </textarea>
+            <br/>
+            <br/>
+            <input type="submit" name="Submit">
+        </form>
+
+    </main>
+    <footer>
+        <p>This is the footer of this webpage</p>
+        <h4>Other Contacts:</h4>
+        <h5>Phone No.:</h5>
+        <h5>Email Address:</h5>
+        <h5>Location:</h5> 
+    </footer>
+</body>
+</html>
